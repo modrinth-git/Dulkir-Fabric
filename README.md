@@ -1,1 +1,96 @@
-# Dulkir-Fabric
+# DulkirMod-Fabric
+[![discord badge](https://img.shields.io/discord/819011720001224735?label=discord&color=9089DA&logo=discord&style=for-the-badge)](https://discord.gg/WnJwrNZQSn)
+[![twitch](https://img.shields.io/twitch/status/dulkir?style=for-the-badge)](https://www.twitch.tv/dulkir)
+
+Home of dulkirmod for modern versions of minecraft.
+
+<details>
+    <summary>
+        <b>Currently Implemented Features</b>
+    </summary>
+
+<ul>
+  <li>Toggle Reverse third person</li>
+  <li>Expandable Chat Macros with Keybindings</li>
+  <li>Dynamic Key</li>
+  <li>Config Menu Backend and Front End</li>
+  <li>Scrollable Toolips with Zoom Option, compatible with inventory scaling</li>
+  <li>Inventory Scaling, supports any float</li>
+  <li>Command aliases</li>
+  <li>WireFrame and World Text Rendering (needs a recoding)</li>
+  <li>Abiphone DND</li>
+  <li>Custom Selected Block outline</li>
+  <li>Inactive Effigy Waypoints (rift)</li>
+  <li>Custom Held Item Placement/Animations</li>
+  <li>Commands for Preset Export/Import to/from Clipboard (see /animations)</li>
+  <li>Glow Utility (no ESP toggle, currently not used for anything)</li>
+  <li>Cooldown Tracking through Durability Display (Working for some sound cooldowns)</li>
+  <li>NO DOWNTIME alarm. Plays Iphone alarm if you stop moving after a certain amount of time.</li>
+  <li>Large Explosion Particle render toggle</li>
+  <li>Hide Scoreboard Numbers</li>
+  <li>Arachne Spawn Timer and Keeper Waypoints</li>
+  <li>Hide Hunger Display option</li>
+  <li>AOTV Etherwarp display</li>
+  <li>Action Bar HUD replacements (HEALTH, MANA, DEF, SPEED)</li>
+  <li>Hide Lightning in Skyblock</li>
+  <li>Hide Fire Overlay</li>
+  <li>Slayer Miniboss Alerts + Boxes</li>
+  <li>Boss Kill time Feedback for slayers</li>
+  <li>Clean Blaze Slayer Mode! (Removes particles and kills fireballs)</li>
+  <li>Damage Splash Truncate/Hide</li>
+  <li>Blaze Attunement Display</li>
+  <li>Broken Hyperion Notification</li>
+  <li>Max Visitors Notification</li>
+  <li>Garden HUD for Composter/Visitors</li>
+  <li>Some vampire slayer features (steak display and ichor highlight)</li>
+</ul>
+</details>
+
+<details>
+    <summary>
+        <b>Contributing</b>
+    </summary>
+    Unfortunately, contributions are not open at this time. By all means, feel free to make your own branch and maintain
+    it if you'd like though. I will not directly endorse any forks of this mod, but I won't be taking any steps to take
+    them down so long as licenses are abided by.
+</details>
+
+## For Users
+Opening the settings menu can be achieved through the escape menu or through the `/dulkir` command. Almost all features
+are off by default, so you **will** want to look into this upon first launch.
+
+Editing HUD positioning makes use of the [JARVIS API](https://github.com/romangraef/jarvis). This library is still in development, but is a fantastic library for a common HUD element editor.
+This allows multiple mods to handle the rendering on their own, but have the positioning logic be handled in one place.
+
+Use the command `/jarvis gui` to access the main editor. There is an addressable keybinding for this as well (default `RSHIFT`)
+
+Use the command `/animations` to share animation profiles.
+
+### Dependencies
+This mod has 2 dependencies to run:
+
+[Fabric API](https://github.com/FabricMC/fabric/releases/)
+
+[Fabric Kotlin Language Support](https://github.com/FabricMC/fabric-language-kotlin/releases/)
+
+Theoretically, I could throw these in the JAR, but almost all current Fabric mods already have these dependencies anyway.
+
+### Recommendations
+(Disclaimer: None of these mods are personally checked by myself for malicious behavior. However, they are well known mods
+in the Fabric community, so I thought I would include something about them here.)
+
+There are a few mods here that I would recommend installing as a baseline:
+
+[Sodium](https://modrinth.com/mod/sodium/version/mc1.20-0.4.10?hl=en-US) and [Lithium](https://modrinth.com/mod/lithium?hl=en-US) are basically the Optifine/Patcher of 1.20. They are aimed at general performance improvements.
+
+[Zoomify](https://modrinth.com/mod/zoomify/versions) is the zoom mod I choose to use to replace Optifine's functionality.
+
+[Iris](https://modrinth.com/mod/iris/version/1.6.4+1.20?hl=en-US) allows you to use shaders.
+
+[Borderless Mining](https://www.curseforge.com/minecraft/mc-mods/borderless-mining) is a nice utility for windowed fullscreen, if you're partial to that.
+
+[Farsight](https://www.curseforge.com/minecraft/mc-mods/farsight-fabric/files) is a novel mod that caches chunks outside of server render distance, allowing you to get some WICKED screenshots.
+
+Skyblock Specific: [Firmament](https://github.com/romangraef/Firmament) is a mod that aims to accomplish some of the stuff you would see in NEU 1.8.9. It is also in
+a beta state right now and in development, but brings some utility like item list, not resetting cursor between inventories,
+image preview (chat), slot locking, and more.
